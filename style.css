@@ -38,7 +38,8 @@ header nav
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 11rem;
+    height: 5rem;
+    background-color: rgb(219, 239, 232);
 }
 
 header nav .left-side-menu
@@ -50,9 +51,11 @@ header nav .left-side-menu
     
 }
 
-header nav .left-side-menu .logo h5{
-    width:13rem;
-    height: 5.5rem;
+
+header nav .left-side-menu .logo img
+{
+    width:80px;
+    height: 80px;
 }
 
 header nav .left-side-menu .sub-menu
@@ -202,4 +205,116 @@ header  .right-side-menu .sub-menu a
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: rgb(219, 239, 232);
+}
+.footer-logo
+
+{
+    width:40%;
+    margin:10px 15px;
+   
+}
+
+.footer-logo h2
+{
+    margin: 0 auto;
+    font-weight: bold;
+}
+.footer-logo p
+{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.footer-part
+{
+    width:60%;
+    margin:10px;
+}
+.footer-content
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px;
+    padding: 5px;
+}
+.footer-content a
+{
+    text-decoration: none;
+}
+.footer-content a li{
+    list-style: none;
+}
+
+/*--------------------- responsive ---------------*/
+
+@media screen and (max-width:768px) {
+    /* header nav .right-side-menu
+{
+    display: block;
+    width: 100%;
+   
+} */
+
+header nav
+{
+    display: block;
+  
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(219, 239, 232);
+}
+header .right-side-menu .sub-menu
+{
+    display: block;
+    width: 100%;
+
+}
+.main-hero-section
+{
+   
+    width: 100%;
+   
+    display: block;
+     padding: 10px;
+    margin:15px 0;
+}
+
+.main-hero-section h1
+{
+    width:100%;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+.main-hero-section img
+
+{
+    width:100%;
+    
+}
+
+.healthy-app
+{
+    display: block;
+   width:100%;
+}
+
+.healthy-app .right-side-app h1
+{
+    /* font-size: 2rem; */
+    font-weight: 600;
+    line-height: 3rem;
+    text-transform: capitalize;
+}
 }
